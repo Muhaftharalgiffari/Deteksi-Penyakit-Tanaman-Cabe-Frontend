@@ -1,0 +1,17 @@
+{
+  "name": "chilidetect",
+  "version": "1.0.0",
+  "description": "Aplikasi Deteksi Penyakit Daun Cabai",
+  "scripts": {
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "frontend": "cd frontend && npm run dev",
+    "backend": "cd backend && node server.js",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "jspdf": "^3.0.1"
+  }
+}
